@@ -1,6 +1,33 @@
+# Events Management App
+
+Test option #1
+Allows users to manage and register to events.
+
+# Technologies
+
+- React
+- Typescript
+- Material UI
+- Material UI X for date-time-pickers-
+- React-router-dom
+- Axios
+- country-list-json
+- React-Hook-Form
+- Yup
+- uuid
+- Date-io/moment
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# initial configuration
+
+In the project directory, you can run:
+
+### `npm install`
+
+To install all dependencies
 
 ## Available Scripts
 
@@ -44,3 +71,44 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+# Screens
+
+### Home / Events
+
+![Home / Events](/screens/Events.png)
+![Home / Events / Icons](/screens/Events2.png)
+
+> Note: This page lists all available events, information, and groups' and participants' statistics
+
+### LogIn Page
+
+![LogIn Page](/screens/Login.png)
+
+> Note: LogIn page
+
+### Create Event
+
+![Create Event](/screens/CreateEvent.png)
+![Create Group](/screens/CreateGroups.png)
+
+> Note: Create event, set type, description, name, country and location, set groups
+
+### Register to Event
+
+![Register Event](/screens/RegisterAndInfo.png)
+
+> Note: Allows users to register themselves and External participants
+
+## Optional bonus items
+
+### Task #1 For the selected test scenario, prepare a proposal to improve the original request
+
+- As a participant I want to share my review of event so that I can interact with others.
+- As a staff I want to give certain groups some information so that I can give them tasks in events.
+- As a participant I want to give rate the event so that I can express my perception.
+- As a admin I want to know participants' interests so that I can make strategic desicions.
+
+### Task #2 Explain what is your favorite programming paradigm
+
+- My favorite programming paradigm is functional programming because it focuses on what to solve using pure functions, and takes advantege by using functions as variables or arguments and return a value, that becomes useful when you whant to write organized code, to create clean and maintainable apps.Immutability, a principle to avoid side effects in arguments that becomes useful in large code softaware.
