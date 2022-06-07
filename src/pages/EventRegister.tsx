@@ -81,13 +81,11 @@ export const EventRegister = () => {
     }
   };
   const handleRemoveGroup = (id: any) => {
-    console.log(id);
     const newList = groups.filter((item) => item.id !== id);
     setGroups(newList);
   };
   const navigate = useNavigate();
   const onSubmit: SubmitHandler<FormData> = async (data) => {
-    // console.log({ data });
     let send: IEvent;
 
     send = {
@@ -96,9 +94,8 @@ export const EventRegister = () => {
       groups:
         groups.length > 0 ? [...groups] : [...groups, { name: "Default" }],
     };
-    // console.log("send", send);
+
     const add = await EventService.add(send);
-    console.log("add", add);
 
     if (add?.message === "ok") {
       navigate(`/`);

@@ -8,7 +8,6 @@ export const authReducer = (
 ): AuthState => {
   switch (action.type) {
     case "[Auth] - SetUser":
-      //   console.log(action);
       return {
         ...state,
         _id: action.payload._id,

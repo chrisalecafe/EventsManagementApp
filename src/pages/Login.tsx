@@ -37,7 +37,6 @@ export const Login = () => {
   const navigate = useNavigate();
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
-    console.log({ data });
     let auth: AuthState = {
       username: data.user,
       _id: "",
@@ -49,7 +48,7 @@ export const Login = () => {
     };
 
     const result = await authService.auth(auth);
-    console.log(result);
+
     if (result?.message === "ok") {
       const user_res: AuthState = { ...result?.user, isLoggedIn: true };
 
